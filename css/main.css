@@ -131,6 +131,8 @@ span.hero {
     color: gray;
 }
 .continue-button {
+    text-decoration: none;
+    text-transform: capitalize;
     padding: 1em;
     text-align: center;
     color: white;
