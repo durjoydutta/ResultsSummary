@@ -1,0 +1,152 @@
+/*To position the wrapper at the center of the body*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+/*The end credit at the bottom*/
+.attribution {
+    position:absolute;
+    bottom: 0;
+    font-size: 0.8rem;
+    opacity: 80%;
+}
+
+.attribution a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #7e50f2;
+}
+
+
+
+
+/*the main wrapper consisting of two columns*/
+
+.wrapper {
+    box-shadow: 0.5em 0.5em 1em #d7e8f5;
+    border-radius: 1.6em;
+    display: flex;
+    justify-content: center;
+    min-height: 30em;
+    max-height: 35em;
+}
+
+
+
+
+/*left column of the wrapper*/
+
+.left-col {
+    max-width: 18em;
+    color: white;
+    padding: 1em;
+    background-image: linear-gradient(#7e50f2,#240587) ;
+    border-radius: 1.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+span.hero {
+    margin-top: 2em;
+    color: rgba(255, 255, 255, 0.75);
+}
+.my-score {
+    margin-top: 0.7em;
+    background-image: linear-gradient(#240587,#4730ba);
+    box-shadow: 0 -2em 1em #4730ba inset;
+    padding: 1em;
+    min-width: 55%;
+    min-height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.obtained-score {
+    font-size: 3.5rem;
+}
+.total-score {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.remark {
+    margin-top: .6em;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+.detailed-remark {
+    padding: 1.3em;
+    padding-bottom: 2em;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+/* Right column of the wrapper */
+
+
+.right-col {
+    padding: 2em;
+    min-width: 17em;
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.right-col .summary {
+    font-weight: stronger;
+    font-size: 1.2em;
+}
+#stats {
+    display: flex;
+    gap: .5em;
+    padding: .8em;
+    border-radius: .5em;
+}
+.scorecard {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+.score {
+    color: #4b4d52;
+    display: inline-flex;
+    gap: .5em;
+    margin-left: auto;
+
+}
+.score .out-of {
+    color: gray;
+}
+.continue-button {
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: #2f343d;
+    border-radius: 3em;
+}
+
+/*Adding individual text color to each of the stats*/
+.reac {color: #d15c45;}
+.mem {color: #deac5b;}
+.ver {color: #5bdeb0;}
+.vis {color: #2a5cd1;}
+/*Adding individual background color to each of the stats*/
+.one {background-color: #f7f1ed;}
+.two {background-color: #f2f1ed;}
+.three {background-color:#dfe6df;}
+.four {background-color: #c1cff5;}
+
+
