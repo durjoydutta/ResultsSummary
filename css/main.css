@@ -1,39 +1,105 @@
-/*To position the wrapper at the center of the body*/
+
 body {
-    font-family: 'Ubuntu', sans-serif;
+    background-image: url(/assets/images/blob-scene-haikei.svg);
+    /*background-image: linear-gradient(#81278d,rgb(159, 201, 159));*/
+    background-repeat: no-repeat;
     margin: 0 auto;
+}
+/*To position the container at the center of the body*/
+.container {
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+} 
+
+/*Adjusting the navbar*/
+nav {
+    gap: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(134, 125, 125,65%);
+    box-shadow: 0em .5em 1em #33362f;
+    background-image: linear-gradient( #f3fae4, #d4ab23);    
+}
+
+/*adjusting the college logo*/
+#uni-logo {
+    height: 7em;
+    width: 7em;
+    padding: .5em;
+    margin-left: 2.5%;   
+}
+
+.uni-name {
+    margin-left: -1em;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: rgba(0,0,0,.85);
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+    padding: .5em;
+    max-width: min-content;
+}
+
+/*organising the ul elements*/
+nav ul {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8em;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.85);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.login-button {
     display: flex;
     justify-content: center;
-    margin-top: 15em;
+    align-items: center;
+    height: 100%;
+    min-width: 10%;
+    margin-left: 2em;
+    background-image:linear-gradient(#3b334e,#050113); 
+    border: 0em 0.2rem 2em 1em solid rgba(12, 11, 11, 0.85);
+}
+.login {
+   border-radius:100%;
+   transition: transform 0.3s;
 }
 
-/*The end credit at the bottom*/
-.attribution {
-    position:absolute;
-    bottom: 0;
-    font-size: 0.8rem;
-    opacity: 80%;
+.login:hover {
+    transform: scale3d(1.1,1.1,1.1);
 }
-
-.attribution a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #7e50f2;
-}
-
-
-
 
 /*the main wrapper consisting of two columns*/
-
 .wrapper {
-    box-shadow: 0.5em 0.5em 1em #d7e8f5;
+    margin: 10em auto;
     border-radius: 1.6em;
     display: flex;
     justify-content: center;
     min-height: 30em;
     max-height: 35em;
+    background-image: linear-gradient(to top, #a8bd9f, #bb89f5);
+    box-shadow: 0.5em 0.5em 1em #33362f;
 }
+
 
 
 
@@ -41,16 +107,21 @@ body {
 /*left column of the wrapper*/
 
 .left-col {
+    min-width: 15em;
     max-width: 18em;
     color: white;
     padding: 1em;
-    background-image: linear-gradient(#7e50f2,#240587) ;
+    background-image: linear-gradient(#7e50f2,#240587);
     border-radius: 1.6em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
+    transition: transform 0.5s;
+}
+.left-col:hover {
+    transform: scale3d(1.1,1.1,1.1);
 }
 span.hero {
     margin-top: 2em;
@@ -58,8 +129,8 @@ span.hero {
 }
 .my-score {
     margin-top: 0.7em;
-    background-image: linear-gradient(#240587,#4730ba);
-    box-shadow: 0 -2em 1em #4730ba inset;
+    background-image: none;
+    box-shadow: 0 -3em 3em #2b1697 inset;
     padding: 1em;
     min-width: 55%;
     min-height:30%;
@@ -68,6 +139,12 @@ span.hero {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.my-score:hover {
+    transform: scale3d(1.2,1.2,1.2);
+    opacity: 80%;
 }
 .obtained-score {
     font-size: 3.5rem;
@@ -98,12 +175,14 @@ span.hero {
 
 .right-col {
     padding: 2em;
-    min-width: 17em;
-    max-width: 20em;
+    min-width: 16em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    transition: transform 1s;
+}
+.right-col:hover {
+    transform: scale3d(1.1,1.1,1.1);
 }
 .right-col .summary {
     font-weight: stronger;
@@ -113,7 +192,11 @@ span.hero {
     display: flex;
     gap: .5em;
     padding: .8em;
-    border-radius: .5em;
+    border-radius: .7em;
+    transition: transform .3s ease;
+}
+#stats:hover {
+    transform: scale3d(1.1,1.1,1.1);
 }
 .scorecard {
     display: flex;
@@ -136,8 +219,16 @@ span.hero {
     padding: 1em;
     text-align: center;
     color: white;
-    background-color: #2f343d;
+    background-color: #3f614e;
     border-radius: 3em;
+    transition: transform .3s ease-in-out;
+}
+
+.continue-button:hover {
+    transform: scale3d(1.1,1.1,1.1);
+    
+    background-color: #131413;
+    box-shadow: .5em .5em 1em #cad9b2 ;
 }
 
 /*Adding individual text color to each of the stats*/
@@ -147,8 +238,23 @@ span.hero {
 .vis {color: #2a5cd1;}
 /*Adding individual background color to each of the stats*/
 .one {background-color: #f7f1ed;}
-.two {background-color: #f2f1ed;}
-.three {background-color:#dfe6df;}
+.two {background-color: #e8e2cf;}
+.three {background-color: #c8e6d5;}
 .four {background-color: #c1cff5;}
 
+/*The end credit at the bottom*/
+.attribution {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
 
+.attribution a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #06cee9;
+}
