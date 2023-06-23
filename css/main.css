@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(assets/images/blob-scene-haikei.svg);
+    background-image: url(../assets/images/blob-scene-haikei.svg);
     /*background-image: linear-gradient(#81278d,rgb(159, 201, 159));*/
     margin: 0;
     background-repeat: no-repeat;
