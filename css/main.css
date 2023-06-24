@@ -279,6 +279,8 @@ span.hero {
 .container .attribution {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: .2em;
     color: whitesmoke;
     font-weight: bold;
     font-size: 0.8rem;
